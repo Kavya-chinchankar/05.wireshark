@@ -1,0 +1,71 @@
+Title: Wireshark Packet Capture and Protocol Analysis
+Task: Task 5 – Capture and Analyze Network Traffic Using Wireshark
+
+---------------------------------------------
+Objective:
+---------------------------------------------
+To capture live network packets on my laptop using Wireshark and identify different network protocols such as DNS, TCP, HTTP, and ICMP. 
+The goal is to understand how data travels over the network and to gain practical experience in packet analysis.
+
+---------------------------------------------
+Steps Performed:
+---------------------------------------------
+1. Installed Wireshark from the official website.
+2. Opened Wireshark and selected the active Wi-Fi network interface.
+3. Started live capture by clicking the blue shark-fin icon.
+4. Generated network traffic by browsing websites and pinging servers (e.g., ping google.com).
+5. Stopped the capture after 1 minute.
+6. Used filters like “http”, “dns”, “tcp”, and “icmp” to view specific packets.
+7. Saved the capture file as “network_capture.pcap”.
+8. Analyzed packet details to identify source/destination IPs and protocols.
+9. Summarized the findings and exported results for submission.
+
+---------------------------------------------
+Protocols Identified:
+---------------------------------------------
+1. **DNS (Domain Name System)** – Used to resolve domain names (e.g., google.com) into IP addresses.
+2. **TCP (Transmission Control Protocol)** – Provides reliable data transfer between devices.
+3. **HTTP (HyperText Transfer Protocol)** – Used for web communication between client and server.
+4. **ICMP (Internet Control Message Protocol)** – Used for network diagnostics (e.g., ping requests and replies).
+
+---------------------------------------------
+Sample Packet Details:
+---------------------------------------------
+**Packet 1: DNS Query**
+Source IP: 192.168.1.4  
+Destination IP: 8.8.8.8  
+Protocol: DNS  
+Info: Standard query 0x7bfc A www.google.com  
+
+**Packet 2: TCP Communication**
+Source IP: 192.168.1.4  
+Destination IP: 142.250.183.78  
+Protocol: TCP  
+Info: 443 → 51532 [SYN, ACK] Seq=1 Ack=1 Win=65535  
+
+**Packet 3: HTTP Request**
+Source IP: 192.168.1.4  
+Destination IP: 142.250.183.78  
+Protocol: HTTP  
+Info: GET /index.html HTTP/1.1  
+
+**Packet 4: ICMP Echo Request**
+Source IP: 192.168.1.4  
+Destination IP: 8.8.8.8  
+Protocol: ICMP  
+Info: Echo (ping) request  
+
+---------------------------------------------
+Conclusion:
+---------------------------------------------
+Wireshark successfully captured and displayed live network traffic. 
+Multiple protocols such as DNS, TCP, HTTP, and ICMP were identified and analyzed. 
+This experiment enhanced understanding of how different protocols work together in real-time network communication and provided hands-on packet analysis experience.
+
+---------------------------------------------
+Outcome:
+---------------------------------------------
+Gained practical skills in:
+- Capturing and filtering network packets
+- Identifying multiple network protocols
+- Analyzing packet-level communication for troubleshooting and security awareness
